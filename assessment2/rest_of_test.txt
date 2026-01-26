@@ -1,0 +1,64 @@
+🔴 MOCK TEST 3 — HARD
+
+Time: 120 minutes
+Total: 100 marks
+
+Section A: Command Line (15 marks)
+
+Write the command to:
+
+a) Search for the word "error" inside a file called log.txt
+
+b) Count the number of lines in log.txt
+
+c) Move all .txt files into a folder called text_files
+
+Section B: Conditional Statements + Nested Logic (15 marks)
+
+Write a program that:
+
+Takes a year as input
+
+Prints "Leap year" if the year is a leap year
+
+Otherwise prints "Not a leap year"
+
+(Leap year rules apply)
+
+Section C: Functions (20 marks)
+
+Write a function called calculate_average that:
+
+Takes a list of integers
+
+Returns the average
+
+If the list is empty, return 0
+
+Section D: Advanced Loops (25 marks)
+
+Write a program that:
+
+Uses nested loops
+
+Prints the following pattern for n = 5:
+
+*
+**
+***
+****
+*****
+
+Section E: Simple Algorithm / Problem Solving (25 marks)
+
+Write a program that:
+
+Takes a list of integers
+
+Finds and prints:
+
+The largest number
+
+The smallest number
+
+Do not use built-in functions like max() or min()
