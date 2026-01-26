@@ -8,8 +8,10 @@ Section A: Command Line (15 marks)
 Write the command to:
 
 a) Search for the word "error" inside a file called log.txt
+- ls -l | grep "error" 
 
 b) Count the number of lines in log.txt
+- 
 
 c) Move all .txt files into a folder called text_files
 
