@@ -19,13 +19,22 @@ class AssessmentThree:
 
     def remove_whitespace(self, text):
         """Return the string with all whitespace removed."""
-        
-        
+        empty_ = ""
+        for char in text:
+            if char.isalnum():
+                empty_ += char
+        return empty_
         pass
 
     def all_unique(self, items):
         """Return True if all items in the list are unique."""
-        pass
+        item = ""
+        for char in items:
+            if char.lower() in item:
+                item += char
+            else:
+                return False
+        return True
 
     def title_case(self, sentence):
         """Capitalize the first letter of each word."""

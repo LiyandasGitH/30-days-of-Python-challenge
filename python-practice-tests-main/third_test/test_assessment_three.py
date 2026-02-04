@@ -1,4 +1,5 @@
 import unittest
+from third_test import *
 from assessment_three import AssessmentThree
 
 
