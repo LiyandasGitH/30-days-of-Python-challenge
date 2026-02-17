@@ -7,17 +7,43 @@
 
 def count_unique_elements(items):
     """Return the number of unique elements in the list."""
-    pass
+    # count = 0
+    # unique_items = []
+    # for item in items:
+    #     if item not in unique_items:
+    #         count += 1
+    #         unique_items.append(item)
+    count = 0
+    unique_items = []
+    for item in set(items):
+        unique_items.append(item)
+    for item in unique_items:
+        count += 1
+    return count
 
 
 def merge_dictionaries(dict1, dict2):
     """Merge two dictionaries, overriding values from the first with the second."""
-    pass
+    for key, value in dict2.items():
+        dict1[key] = value
+        # print(dict1)
+    return dict1    
 
 
 def format_student_report(name, marks):
     """Return a formatted report showing a student's name and average mark."""
-    pass
+    count = 0
+    total = 0
+    for item in marks:
+        total += item
+        count += 1
+    aveg_mark = total / count
+    # result = {}
+    # result[name] = str(f"{(aveg_mark):.2f}")
+    result = name, f"{aveg_mark:.2f}"
+    
+    return result
+    
 
 
 def compress_string(text):
