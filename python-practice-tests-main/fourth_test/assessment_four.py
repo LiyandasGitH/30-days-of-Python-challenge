@@ -48,7 +48,20 @@ def format_student_report(name, marks):
 
 def compress_string(text):
     """Compress a string by counting consecutive characters."""
-    pass
+    dict1 = {}
+    for char in text:
+        if char in dict1:
+            dict1[char] += 1
+        else:
+            dict1[char] = 1
+    compressed_str = ""
+    for key, value in dict1.items():
+        compressed_str += key 
+        compressed_str += str(value)
+    return compressed_str
+    
+print(compress_string("aaabbc"))
+        
 
 
 # ======= INTERMEDIATE =======
