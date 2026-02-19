@@ -68,12 +68,25 @@ print(compress_string("aaabbc"))
 
 def group_by_length(words):
     """Group words into a dictionary based on their length."""
-    pass
-
+    dict1 = {}
+    for word in words:
+        # if len(word) not in dict1.keys():
+            # dict1.update({len(word): [x for x in words if len(x) == len(word)]})
+        if len(word) in dict1:
+            dict1[len(word)].append(word)
+        else:
+            dict1[len(word)] = [word]
+        
+    return dict1
+    ...
+  
 
 def reverse_list_recursively(items):
     """Reverse a list using recursion."""
-    pass
+    if not items:
+        return []
+    last = items.pop()
+    return [last] + reverse_list_recursively(items)
 
 
 def rotate_matrix_90(matrix):

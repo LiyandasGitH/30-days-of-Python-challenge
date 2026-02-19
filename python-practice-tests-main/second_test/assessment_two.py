@@ -4,11 +4,23 @@ class AssessmentTwo:
 
     def count_negative_numbers(self, numbers):
         """Return the number of negative values in the list."""
-        pass
+        count = 0
+        for n in numbers:
+            if n < 0:
+                count += 1
+        return count
 
     def average(self, numbers):
         """Return the average of numbers or None if list is empty."""
-        pass
+        total = 0
+        divider = len(numbers)
+        if numbers == []:
+            return None
+        else:
+            for n in numbers:
+                total += n 
+            return total / divider
+        
 
     def first_and_last(self, items):
         """Return a tuple of (first, last) item or None if list is empty."""
